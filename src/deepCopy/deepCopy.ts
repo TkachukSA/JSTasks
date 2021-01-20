@@ -149,6 +149,7 @@ let man6FullCopy  //  your code
 
 
 //10 Array of objects inside an object -> object -> array -> object ->  object
+
 export let man7 = {
     name: 'John',
     age: 28,
