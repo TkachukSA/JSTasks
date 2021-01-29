@@ -1,4 +1,4 @@
-import {arrayPlusArray, litres} from "./codeWars";
+import {arrayPlusArray, divisors, litres} from "./codeWars";
 
 
 test('water in house', ()=>{
@@ -25,5 +25,19 @@ test('array PlusA rray - summa', ()=>{
  let result= arrayPlusArray(arr1, arr2)
 
     expect(result).toBe(21)
+
+})
+
+
+test('Find the divisors!', ()=>{
+
+    let a = 10
+    let b = 13
+
+ let resultA= divisors(a)
+ let resultB= divisors(b)
+
+    expect(resultA).toStrictEqual([2,5])
+    expect(resultB).toStrictEqual('13 is prime')
 
 })
