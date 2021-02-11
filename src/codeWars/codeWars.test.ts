@@ -1,4 +1,4 @@
-import {arrayPlusArray, divisors, litres} from "./codeWars";
+import {arrayPlusArray, divisors, findOdd, litres} from "./codeWars";
 
 
 test('water in house', ()=>{
@@ -39,5 +39,19 @@ test('Find the divisors!', ()=>{
 
     expect(resultA).toStrictEqual([2,5])
     expect(resultB).toStrictEqual('13 is prime')
+
+})
+
+
+test('Find the  odd int!', ()=>{
+
+    let a = [1,1,2,2,3,3,4,4,4,4,7]
+    let b = [1,1,2,2,3,3,4,4,4,4,7,7,1]
+
+    let resultA= findOdd(a)
+    let resultB= findOdd(b)
+
+    expect(resultA).toBe(7)
+    expect(resultB).toBe(1)
 
 })

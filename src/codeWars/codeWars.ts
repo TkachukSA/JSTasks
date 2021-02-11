@@ -25,3 +25,7 @@ export function divisors(integer: number) {
     return res.length === 1? `${integer} is prime`: res.filter(t => t!== 1)
 
 };
+export function findOdd(arr: number[]) {
+   return  arr.find(t=> arr.filter(n=>n === t ).length % 2)
+
+}
