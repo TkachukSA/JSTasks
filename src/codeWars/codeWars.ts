@@ -27,5 +27,12 @@ export function divisors(integer: number) {
 };
 export function findOdd(arr: number[]) {
    return  arr.find(t=> arr.filter(n=>n === t ).length % 2)
+}
+export function duplicateCount(text : string){
+    let arrText = text.toLowerCase().split('')
+    let red: string[] = arrText.sort()
+    let result: string[] = []
 
+    red.reduce((acc, el)=> acc == el? result.includes(el)? el:  result.push(el): el, 0 )
+    return result.length === 0 ? 0: result.length
 }
