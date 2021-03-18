@@ -1,4 +1,4 @@
-import {arrayPlusArray, divisors, findOdd, litres} from "./codeWars";
+import {alphabetPosition, arrayPlusArray, divisors, findOdd, litres} from "./codeWars";
 
 
 test('water in house', ()=>{
@@ -53,5 +53,19 @@ test('Find the  odd int!', ()=>{
 
     expect(resultA).toBe(7)
     expect(resultB).toBe(1)
+
+})
+
+
+test('Replace With Alphabet Position', ()=>{
+
+    let a = "The sunset sets at twelve o' clock."
+
+
+    let res= alphabetPosition(a)
+
+
+    expect(res).toBe("20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
+
 
 })

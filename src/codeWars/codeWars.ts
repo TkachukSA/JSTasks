@@ -31,8 +31,14 @@ export function findOdd(arr: number[]) {
 export function duplicateCount(text : string){
     let arrText = text.toLowerCase().split('')
     let red: string[] = arrText.sort()
-    let result: string[] = []
+    let result: [] = []
 
-    red.reduce((acc, el)=> acc == el? result.includes(el)? el:  result.push(el): el, 0 )
+//@ts-ignore
+    red.reduce((acc, el)=> acc === el? result.includes(el)? el:  result.push(el): el, 0 )
     return result.length === 0 ? 0: result.length
+}
+
+
+export function alphabetPosition(text: any) {
+    return [...text].map(a => parseInt(a, 36) - 9).filter(a => a >= 0).filter(q=>q!==0).join(' ')
 }
